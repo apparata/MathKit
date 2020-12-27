@@ -4,14 +4,6 @@ import Foundation
 import CoreGraphics
 #endif
 
-// MARK: Dot product
-
-infix operator • : MultiplicationPrecedence
-
-// MARK: Cross product
-
-infix operator ⨯ : MultiplicationPrecedence
-
 // MARK: Degrees to Radians
 
 postfix operator °
