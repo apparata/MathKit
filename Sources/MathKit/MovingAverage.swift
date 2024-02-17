@@ -1,4 +1,3 @@
-
 import Foundation
 
 /// Calculate average of the last N accumulated values.

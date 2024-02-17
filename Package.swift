@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.9
 
 import PackageDescription
 
@@ -6,7 +6,7 @@ let package = Package(
     name: "MathKit",
     platforms: [
         // Relevant platforms.
-        .iOS(.v13), .macOS(.v10_15), .tvOS(.v13)
+        .iOS(.v13), .macOS(.v11), .tvOS(.v13)
     ],
     products: [
         .library(name: "MathKit", targets: ["MathKit"])
