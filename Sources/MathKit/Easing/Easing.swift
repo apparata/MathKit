@@ -3,6 +3,7 @@ import Foundation
 /// Easing mode indicates whether an ease function should be applied to
 /// the start of the interval, the end, or both, and also the function to use.
 public enum EasingType {
+    case linear
     case easeIn(EasingFunction)
     case easeOut(EasingFunction)
     case easeInOut(EasingFunction)
@@ -37,6 +38,7 @@ public class Easing {
     ///
     public func callAsFunction<T: BinaryFloatingPoint>(_ t: T) -> T {
         switch type {
+        case .linear: t
         case .easeIn(.quadratic): quadraticEaseIn(t)
         case .easeOut(.quadratic): quadraticEaseOut(t)
         case .easeInOut(.quadratic): quadraticEaseInOut(t)
