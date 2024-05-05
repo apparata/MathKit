@@ -12,9 +12,9 @@ extension simd_quatf {
         let cosYaw = cos(yaw * 0.5)
         let sinYaw = sin(yaw * 0.5)
         self.init(vector: [
-            sinRoll * cosPitch * cosYaw - cosRoll * sinPitch * sinYaw,
             cosRoll * sinPitch * cosYaw + sinRoll * cosPitch * sinYaw,
             cosRoll * cosPitch * sinYaw - sinRoll * sinPitch * cosYaw,
+            sinRoll * cosPitch * cosYaw - cosRoll * sinPitch * sinYaw,
             cosRoll * cosPitch * cosYaw + sinRoll * sinPitch * sinYaw
         ])
     }
