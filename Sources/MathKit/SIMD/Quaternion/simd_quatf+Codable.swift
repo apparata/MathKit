@@ -2,7 +2,7 @@ import Foundation
 import simd
 
 /// Add ``Codable`` compliance to ``simd_quatf``
-extension simd_quatf: Codable {
+extension simd_quatf: @retroactive Codable {
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
